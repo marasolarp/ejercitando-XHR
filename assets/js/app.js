@@ -29,7 +29,7 @@ function addNews() {
   const response = data.response.docs;
   // console.log(response);
   for (var i = 4; i < response.length; i++) {
-//llamo imagen
+    // llamo imagen
     let element = response[i];
     const img = element.multimedia[0].url;
     const linkImg = `https://cdn1.nyt.com/${img}`;
@@ -38,24 +38,23 @@ function addNews() {
     const snippet = element.snippet;
     const title = element.headline.main;
 
-
+    // creo mi div para agregar mis fotos y textos
     let div = document.createElement('div');
     div.className = 'col-md-4 img-responsive';
-    let imgP = document.createElement('img');
+    let imgP = document.createElement('img');// imprimo la imagen
     imgP.setAttribute('src', linkImg);
     div.appendChild(imgP);
 
-    let hFour = document.createElement('h4');
+    let hFour = document.createElement('h4');// creo mi tutulo
     hFour.innerText = title;
     div.appendChild(hFour);
 
-    let paragraf = document.createElement('p');
+    let paragraf = document.createElement('p');// creo mi parrafo
     paragraf.innerHTML = snippet;
 
     div.appendChild(paragraf);
     responseContainer.appendChild(div);
   };
-
   /* console.log(data);
     console.log(response)
     const article = data.response.docs[0];
