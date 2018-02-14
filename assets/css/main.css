@@ -1,0 +1,20 @@
+.masthead {
+  background-color: aquamarine;
+}
+.visuallyhidden{
+  display:none;
+}
+#search-keyword {
+  width: 80%;
+  border: 2px solid cadetblue;
+}
+#submit-btn{
+  background-color: blue;
+}
+#response-container{
+  list-style-image: url('http://www.okradio.net/images/play_alt_24x24.png');
+  background: azure;
+}
+#response-container > li{
+  margin-bottom: 0.7em;
+}
