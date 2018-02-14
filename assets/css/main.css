@@ -12,9 +12,11 @@
   background-color: blue;
 }
 #response-container{
-  list-style-image: url('http://www.okradio.net/images/play_alt_24x24.png');
   background: azure;
 }
-#response-container > li{
-  margin-bottom: 0.7em;
+img{
+  margin-top:2em;
+  width: 250px;
+  height: 250px;
+
 }
